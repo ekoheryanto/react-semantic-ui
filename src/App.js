@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import"semantic-ui-css/semantic.min.css";
-import {Grid, Button, Container, Divider, Flag, Header, Icon} from "semantic-ui-react";
+import {Grid, Button, Container, Divider, Flag, Header, Icon, Image, Input, Label} from "semantic-ui-react";
 
 class App extends Component {
   render() {
@@ -30,14 +30,18 @@ class App extends Component {
     </Grid.Column>
     <Grid.Column>
     <Header>
-    <img src="https://react.semantic-ui.com/images/avatar/large/patrick.png"/>
+    <Image src="https://react.semantic-ui.com/images/avatar/large/patrick.png"/>
     Eko Heryanto
     </Header>
     </Grid.Column>
     </Grid>
     <Container textAlign="center">
-    <Icon name="orange sync alternate" size="big" loading/>
+    <Icon name="sync alternate" size="big" loading/>
     </Container>
+    <Image src="https://react.semantic-ui.com/images/avatar/large/patrick.png" size="tiny" href="https://ekoheryanto.github.io" target="_blank" />
+    <br/><br/>
+    <Input type="text" placeholder="Search..." icon={<Icon name="search" />}/>
+    <Label pointing="left" basic color="red">Isikan yang anda cari</Label>
     </div>
     );
   }
