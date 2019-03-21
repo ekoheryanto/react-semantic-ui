@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import"semantic-ui-css/semantic.min.css";
-import {Grid, Button, Container, Divider, Flag} from "semantic-ui-react";
+import {Grid, Button, Container, Divider, Flag, Header, Icon} from "semantic-ui-react";
 
 class App extends Component {
   render() {
@@ -28,8 +28,16 @@ class App extends Component {
     <Flag name="ps"/>
     <Flag name="tr"/>
     </Grid.Column>
-    <Grid.Column>C</Grid.Column>
+    <Grid.Column>
+    <Header>
+    <img src="https://react.semantic-ui.com/images/avatar/large/patrick.png"/>
+    Eko Heryanto
+    </Header>
+    </Grid.Column>
     </Grid>
+    <Container textAlign="center">
+    <Icon name="orange sync alternate" size="big" loading/>
+    </Container>
     </div>
     );
   }
